@@ -258,7 +258,7 @@ def show_macros():
     tk.Button(macro_window, text="Cerrar", command=macro_window.destroy).pack(pady=5)
 
 def spiral_search(text_to_find, steps):
-    save_path = r"C:\python\RS3"
+    save_path = r"C:\python"
     os.makedirs(save_path, exist_ok=True)
     
     screen_width, screen_height = pyautogui.size()
