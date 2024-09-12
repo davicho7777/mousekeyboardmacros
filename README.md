@@ -1,25 +1,28 @@
-Button Descriptions:
+# Macro Recorder & Player GUI
 
-    "Press Click":
-        This button waits for the user to left or right-click anywhere on the screen. It captures the coordinates of the click and displays them in the interface. If a macro is being recorded, the click is stored as a step in the macro sequence.
+This project is a Python-based graphical user interface (GUI) tool designed to automate repetitive tasks. It allows users to record mouse clicks, keystrokes, delays, and text searches on the screen. These sequences (macros) can be saved, loaded, and replayed multiple times. The application is built using Tkinter for the GUI and various third-party libraries to handle mouse and keyboard inputs, screen captures, and text recognition.
 
-    "Register Key":
-        Allows the user to record a key press from the keyboard. The key pressed is displayed in the interface, and if a macro is being recorded, this event is also stored in the macro sequence.
+## Features
 
-    "Apply Delay":
-        This button activates a field where you can input a delay time in seconds. The entered delay is applied, and if a macro is being recorded, the delay is stored as part of the sequence.
+- **Record Mouse Clicks**: Capture both left and right mouse clicks, along with their screen coordinates.
+- **Record Keystrokes**: Record keyboard inputs for automated playback.
+- **Apply Delays**: Add delays between actions for more accurate automation.
+- **Save & Load Macros**: Save recorded macros to a JSON file and reload them for later use.
+- **Replay Macros**: Repeat macros multiple times with optional random delay variations.
+- **Text Search on Screen**: Search for specified text in a spiral pattern on the screen, using Optical Character Recognition (OCR) via Tesseract.
+- **Manage Macros**: View, play, or delete saved macros through an intuitive interface.
 
-    "Apply Entered Delay":
-        Applies the delay entered in the previous field and saves it in the macro if one is being recorded.
+## Requirements
 
-    "Record Macro":
-        Starts or stops recording a macro. While recording, all clicks, keystrokes, and delays are saved in a sequence. Once stopped, the macro can be saved with a name into a JSON file to be replayed later.
+This project requires **Python 3.6** or later.
 
-    "Play":
-        Allows you to play a previously saved macro. The user is prompted to enter the name of the macro they want to play, and the macro will be repeated as many times as the user specifies.
+### Python Libraries
 
-    "View Macros":
-        Opens a window showing all saved macros. From this window, you can select a macro to play or delete it.
-
-    "Search Text on Screen":
-        Allows you to search for text on the screen using a spiral movement technique that takes screenshots. If the specified text is found, it automatically clicks on the screen. If a macro is being recorded, this action will also be saved in the sequence.
+Install the required libraries by running the following pip commands:
+```bash
+pip install pyautogui
+pip install mouse
+pip install Pillow
+pip install pytesseract
+pip install opencv-python
+pip install numpy
