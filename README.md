@@ -1,6 +1,6 @@
 # Macro Recorder & Player GUI
 
-This project is a Python-based graphical user interface (GUI) tool designed to automate repetitive tasks. It allows users to record mouse clicks, keystrokes, delays, and text searches on the screen. These sequences (macros) can be saved, loaded, and replayed multiple times. The application is built using Tkinter for the GUI and various third-party libraries to handle mouse and keyboard inputs, screen captures, and text recognition.
+This project is a windows Python-based graphical user interface (GUI) tool designed to automate repetitive tasks. It allows users to record mouse clicks, keystrokes, delays, and text searches on the screen. These sequences (macros) can be saved, loaded, and replayed multiple times. The application is built using Tkinter for the GUI and various third-party libraries to handle mouse and keyboard inputs, screen captures, and text recognition.
 
 ## Features
 
