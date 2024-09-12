@@ -16,14 +16,12 @@ This project is a Python-based graphical user interface (GUI) tool designed to a
 
 This project requires **Python 3.6** or later.
 
-
-
 ### Path Configuration
 
 Please note that the script saves macros to a local JSON file (macros.json) and may also use specific paths for saving screenshots. Ensure that these paths are correctly configured in your environment:
-
     The script saves macros to a file named macros.json in the current working directory. Ensure this file is accessible and writable.
     For the text search functionality, screenshots are saved to a directory specified in the script (save_path). You may need to update this path according to your directory structure.
+
     
 ### Python Libraries
 Install the required libraries by running the following pip commands:
